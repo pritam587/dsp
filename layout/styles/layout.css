@@ -341,7 +341,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#8EC837 !important;}
 	#header #logo{margin-top:0;}
 
 	#mainav{}
-	#mainav ul{display:none;}
+	#mainav ul{display:inline;}
 	#mainav form{display:block; margin-top:2px;}
 
 	
@@ -359,8 +359,15 @@ input:focus, textarea:focus, *:required:focus{border-color:#8EC837 !important;}
 @media screen and (max-width:750px){
 	.imgl, .imgr{display:inline-block; float:none; margin:0 0 10px 0;}
 	.fl_left, .fl_right{display:block; float:none;}
-	.one_half, .one_third, .one_quarter,{display:block; float:none; width:auto; margin:0 0 30px 0;}
+	.one_half, .one_third, .one_quarter,{display:inline-block; float:none; width:auto; margin:0 20 30px 0;}
 	.last, .group .group > *:last-child, .clear .clear > *:last-child, .clear .group > *:last-child, .group .clear > *:last-child{margin-bottom:0;}/* Experimental - Needs more testing in different situations, stops double margin when stacking */
+	.one_quarter .just{
+		width: 200px;
+	}
+	.one_quarter .faico{display: inline-block;
+	vertical-align: middle;}
+	#ctdetails {display: none;}
+
 
 	#topbar{text-align:center;}
 	#topbar > div:first-of-type{margin-bottom:15px;}
