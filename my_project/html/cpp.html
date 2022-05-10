@@ -2,46 +2,124 @@
 <html>
 <head>
 	<title></title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<style type="text/css">
-		.main{
-			margin-left: 80px;
-			width: 1100px;
-			height: 900px;
-			//background-color: red;
-			text-align: center;
-
-		}
-		.main p{
+		
+		p{
 			text-align: left;
 			font-size: 40px;
 		}
-		.vid1
+		.vid1,.vid2,.vid3,.vid4,.vid5,.vid6,.vid7,.vid8
 		{
-			width: 600px;
-			clear: both;	
-		}
-		.vid2
-		{
-			width: 600px;
-			float: left;
+		width: 600px;
+			margin-left: 250px;
 			clear: both;
+			display: none;
+			transition: width 2s, height 2s, transform 2s;
+			}
+		
+		.container{
+			border: 1px solid #003333;
 		}
 	</style>
 </head>
 <body>
-<div class="main">
-	<div><h2> Welcome to CPP</h2></div>
-	<p>1.Data Types in c++</p>
-	<div class="vid1">
-		<iframe width="500" height="315" src="https://www.youtube.com/embed/cnT1oW5_ePM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-		</iframe> 
+<div class="container">
+	<div >
+		<h2> Welcome to The CPP </h2>
 	</div>
-	<p>2.Variables</p>
-	<div class="vid2"><iframe width="500" height="315" src="https://www.youtube.com/embed/vGHrJDmepI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-		</iframe> 
+	<div >
+		<span style="font-size:30px;margin-left: 50px;border: 1px solid #003333;">
+			1.Data Types in c++
+		</span>
+	<span>
+		<button style="font-size:30px;" onclick="toggleText1()">↓</button>
+			<div class="vid1">
+				<iframe width="500" height="315" src="https://www.youtube.com/embed/vGHrJDmepI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+				</iframe> 	
+	</span>
+	</div>
+	<div>
+		<span style="font-size:30px;margin-left: 50px;border: 1px solid #003333;">
+			2.Data Types in c++
+		</span>
+	<span>
+		<button style="font-size:30px;" onclick="toggleText2()">↓</button>
+			<div class="vid2">
+				<iframe width="500" height="315" src="https://www.youtube.com/embed/vGHrJDmepI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+				</iframe> 	
+	</span>
+	</div>
+	<div>
+		<span style="font-size:30px;margin-left: 50px;border: 1px solid #003333;">
+			2.Data Types in c++
+		</span>
+	<span>
+		<button style="font-size:30px;" onclick="toggleText3()">↓</button>
+			<div class="vid3">
+				<iframe width="500" height="315" src="https://www.youtube.com/embed/vGHrJDmepI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+				</iframe> 	
+	</span>
+	</div>
+	<div>
+		<span style="font-size:30px;margin-left: 50px;border: 1px solid #003333;">
+			3.Data Types in c++
+		</span>
+	<span>
+		<button style="font-size:30px;" onclick="toggleText4()">↓</button>
+			<div class="vid4">
+				<iframe width="500" height="315" src="https://www.youtube.com/embed/vGHrJDmepI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+				</iframe> 	
+	</span>
+	</div>
+	<div>
+		<span style="font-size:30px;margin-left: 50px;border: 1px solid #003333;">
+			4.Data Types in c++
+		</span>
+	<span>
+		<button style="font-size:30px;" onclick="toggleText5()">↓</button>
+			<div class="vid5">
+				<iframe width="500" height="315" src="https://www.youtube.com/embed/vGHrJDmepI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+				</iframe> 	
+	</span>
+	</div>
+	<div>
+		<span style="font-size:30px;margin-left: 50px;border: 1px solid #003333;">
+			5.Data Types in c++
+		</span>
+	<span>
+		<button style="font-size:30px;" onclick="toggleText6()">↓</button>
+			<div class="vid6">
+				<iframe width="500" height="315" src="https://www.youtube.com/embed/vGHrJDmepI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+				</iframe> 	
+	</span>
+	</div>
+	<div>
+		<span style="font-size:30px;margin-left: 50px;border: 1px solid #003333;">
+			6.Data Types in c++
+		</span>
+	<span>
+		<button style="font-size:30px;" onclick="toggleText7()">↓</button>
+			<div class="vid7">
+				<iframe width="500" height="315" src="https://www.youtube.com/embed/vGHrJDmepI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+				</iframe> 	
+	</span>
+	</div>
+	<div>
+		<span style="font-size:30px;margin-left: 50px;border: 1px solid #003333;">
+			7.Data Types in c++
+		</span>
+	<span>
+		<button style="font-size:30px;" onclick="toggleText8()">↓</button>
+			<div class="vid8">
+				<iframe width="500" height="315" src="https://www.youtube.com/embed/vGHrJDmepI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+				</iframe> 	
+	</span>
 	</div>
 
 </div>
-
+<script src="../js/index.js"></script>
+</script>
 </body>
 </html>
