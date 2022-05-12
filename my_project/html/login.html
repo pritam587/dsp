@@ -6,6 +6,9 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 <link href="../../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<meta charset="utf-8" />
+<script src="https://apis.google.com/js/client:platform.js?onload=renderButton" async defer></script>
+<meta name="google-signin-client_id" content="885698539192-l3450ojd7b35iu61cpri3quul8cr40s3.apps.googleusercontent.com">
   <style type="text/css">
  .maindiv{
       width: 280px;
@@ -31,7 +34,7 @@
 <div class="tab-content">
   <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
   
-    <form action="C:\xampp\htdocs\web\login.php" method="post">
+    <form action="http://localhost/login.php" method="post">
       <div class="text-center mb-3">
         <p>Sign in with:</p>
           <button type="button" class="btn btn-link btn-floating mx-1">
@@ -39,7 +42,12 @@
           </button>
 
           <button type="button" class="btn btn-link btn-floating mx-1">
-            <i class="fab fa-google"></i>
+            <i class="fab fa-google" >
+              <a href="http://localhost/index.html">
+                
+              </a>
+
+            </i>
           </button>
 
           <button type="button" class="btn btn-link btn-floating mx-1">
@@ -93,7 +101,7 @@
   
 <button >
   
-  <a href="../../index.html">
+  <a href="file:///C:/xampp/htdocs/index.html">
   gohome
   </a>
 </button>

@@ -19,11 +19,10 @@ if(! $conn )
 #echo 'Connected successfully'."<br>";  
 
 
-$em = $_POST["email"]; 
-$p = $_POST["psw"];
-$sql= "select * from user1
-  where u_name = '$em' && cpsw = '$p'" ;
-$m = $conn->query($sql);
+$em1 = $_POST["email"]; 
+$p1 = $_POST["psw"];
+$sql= "select em,ps from log" ;
+$conn->query($sql);
 
 
 #include "D:/dev/pritam/index.html";
@@ -34,7 +33,6 @@ $l=$array[0];
 $l1=$array[1];
 if ($em == $l && $l1 == $p) {
   # code...
-$sql= "insert into log(em,ps) values('$l','$l1')";
 $m1 = $conn->query($sql);
 if ($m1 === TRUE) {
   echo "<h3>Thank You</h3><h2>Your Have Been successfully Login</h2>";

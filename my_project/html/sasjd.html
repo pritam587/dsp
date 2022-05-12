@@ -1,0 +1,37 @@
+<style>
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+div {
+    display: block;
+}.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x)/-2);
+    margin-left: calc(var(--bs-gutter-x)/-2);
+}
+body {
+    font-family: dm sans,sans-serif;
+    line-height: 1.9;
+    font-weight: 400;
+    width: 100%;
+}
+</style>
+<div class="accordion__wrap">
+<div class="accordion__header d-lg-flex" id="heading1">
+<button class="collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+<div class="me-auto d-flex flex-column">
+<h3>How do I start a web development project?</h3>
+</div>
+</button>
+</div>
+<div id="collapse1" class="accordion__collapse collapse" aria-labelledby="heading1" data-bs-parent="#accordionQuestions" style="">
+<article class="accordion__content">
+<p>The starting point&nbsp;for your custom web development project should be to outline your requirements (regardless of whether this is brief) and share this with us. We would welcome the opportunity to discuss your requirements and work with you to flesh out your requirements into a detailed scope of work document. It’s also a good idea to find examples of sites you like so that you can share with the web developer.</p>
+</article>
+</div>
+</div>
+
